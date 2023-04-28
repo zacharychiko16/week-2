@@ -1007,6 +1007,92 @@
   .img__update img {
     border-radius: 0;
   }
+
+  /* CONTACT US SECTION */
+  
+
+  .contact__us {
+    background-color: #6415ff;
+    padding: 100px;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .contact__us--row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+  }
+  
+  .started__btn{
+    background-color: rgb(245 101 101);
+    padding: 20px 40px;
+    margin: 0px 32px 0px 0px;
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.25);
+    transition: all ease .5s;
+  }
+  
+  .started__btn:hover {
+    background-color: rgb(243, 35, 35);
+  }
+  
+  .contact__btn {
+    background-color: #6415ff;
+    padding: 20px 40px;
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid rgb(160 174 192);
+    transition: all ease .3s;
+  }
+  
+  .contact__btn:hover {
+    background-color: #fff;
+    color: #6415ff;
+    transform: translate(1px, 1px);
+  }
+  
+  .contact__text {
+    font-size: 30px;
+    max-width: 480px;
+    color: #fff;
+    z-index: 1;
+  }
+  
+  .contact__wrapper {
+    display: flex;
+    padding: 12px 0;
+    z-index: 1;
+  }
+  
+  .blob4 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 350px;
+    width: 350px;
+    color: rgb(80, 17, 204);
+    opacity: 0.5;
+    transform: matrix(1, 0, 0, 1, -100, 150);
+  }
+  
+  .blob5 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 350px;
+    width: 350px;
+    color: rgb(80, 17, 204);
+    opacity: 0.5;
+    transform: matrix(1, 0, 0, 1, 150, -275);
+  }
   
   /* 
   Footer Section */
@@ -1938,4 +2024,23 @@
       color: #7c8ba1;
       line-height: 1.625;
     }
+    .contact__us--row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .contact__us--row {
+        width: 100%;
+      }
+      .contact__wrapper {
+        flex-direction: column;
+      }
+      .started__btn {
+        margin: 0 0 16px 0;
+      }
+      .contact__text {
+        padding-bottom: 16px;
+        font-size: 30px;
+      }
   }
