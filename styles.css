@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -5,7 +6,6 @@
     font-family: inter, "sans-serif";
   }
   body {
-    padding: 6px;
     overflow-x: hidden;
   }
   
@@ -90,6 +90,7 @@
     width: 100%;
     max-width: 1238px;
     margin: 0 auto;
+    padding: 0 24px;
   }
   
   #navbar {
@@ -677,7 +678,6 @@
     padding: 24px;
     position: relative;
     margin-top: 64px;
-    margin-left: -40px;
     max-width: 24rem;
     z-index: 100;
     box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
@@ -962,6 +962,7 @@
   .test__profile .test__img {
     width: 80px;
     height: 80px;
+    
   }
   
   .test__img img {
@@ -1027,7 +1028,7 @@
   
   .started__btn{
     background-color: rgb(245 101 101);
-    padding: 20px 40px;
+    padding: 20px 80px;
     margin: 0px 32px 0px 0px;
     border-radius: 50px;
     color: white;
@@ -1036,6 +1037,7 @@
     border: none;
     box-shadow: 4px 6px 8px rgba(0, 0, 0, 0.25);
     transition: all ease .5s;
+    cursor: pointer;
   }
   
   .started__btn:hover {
@@ -1051,6 +1053,7 @@
     font-weight: 600;
     border: 1px solid rgb(160 174 192);
     transition: all ease .3s;
+    cursor: pointer;
   }
   
   .contact__btn:hover {
@@ -1147,12 +1150,12 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    width: 100%;
   }
   
   .logo__container {
     display: flex;
     align-items: center;
-    margin-right: 264px;
   }
   
   .logo__container img {
@@ -1174,8 +1177,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-left: 364px;
+  
   }
+
+  
   
   .social__links .fb {
     margin-right: 1rem;
@@ -1184,6 +1189,9 @@
     color: rgb(26, 32, 44);
     background-color: rgb(247, 250, 252);
     padding: 0.5rem;
+  }
+  .social__links .fb:hover{
+    transform: translate(1px, -1px);
   }
   
   .fb svg {
@@ -1201,6 +1209,10 @@
     background-color: rgb(247, 250, 252);
     padding: 0.5rem;
   }
+
+  .social__links .twitter:hover{
+    transform: translate(1px, -1px);
+  }
   
   .twitter svg {
     height: 1rem;
@@ -1215,6 +1227,9 @@
     color: rgb(26, 32, 44);
     background-color: rgb(247, 250, 252);
     padding: 0.5rem;
+  }
+  .social__links .yt:hover{
+    transform: translate(1px, -1px);
   }
   
   .yt svg {
@@ -1410,7 +1425,8 @@
       font-size: 14px;
       text-align: center;
       line-height: 1.625;
-      margin-top: 4px;
+      max-width: 480px;
+      margin: 8px auto 0;
     }
   
     .features p br {
@@ -1469,6 +1485,8 @@
     .quality__info p {
       text-align: center;
       font-size: 14px !important;
+      max-width: 480px;
+      margin: 8px auto 0;
     }
   
     .quality__info p br {
@@ -1670,6 +1688,7 @@
     .test__profile {
       flex-direction: column;
     }
+
   
     .test__details {
       margin-left: -6.5rem;
@@ -1678,7 +1697,7 @@
     }
   
     .test__icons {
-      margin-top: 72px;
+      margin-top: 92px;
     }
   
     .test__buttons {
@@ -1722,6 +1741,17 @@
       margin: 0 !important;
       margin-top: 24px !important;
     }
+
+    .footer__links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer__links h5 {
+      margin-right: 20px;
+    }
+
   }
   
   @media (max-width: 1024px) {
@@ -1895,6 +1925,7 @@
     .values__list {
       flex-direction: column;
       max-width: 20rem;
+      margin: 0 auto;
     }
   
     /* Pricing Section */
@@ -1920,6 +1951,8 @@
   
     .test__main p {
       font-size: 16px;
+      max-width: 480px;
+      margin: 16px auto ;
     }
   
     .test__main p br {
@@ -1928,6 +1961,7 @@
   
     .test__main {
       width: 59%;
+      margin-bottom: 0px;
     }
   
     .test__img {
